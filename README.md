@@ -62,7 +62,7 @@ Bounding boxes + labels + confidence + FPS
 Live display on monitor (press Q to quit)
 ```
 
-![Architecture diagram extracted from the project presentation](screenshots/architecture.png)
+![Architecture diagram extracted from the project presentation](architecture.png)
 
 ## Installation
 
@@ -71,7 +71,8 @@ Live display on monitor (press Q to quit)
 3. Extract the archive so the model directory can be accessed by the script:
 
    ```bash
-   unzip yolo11_ncnn_model.zip
+   mkdir -p models
+   unzip yolo11_ncnn_model.zip -d models/
    ```
 
 4. Install the camera and display dependencies if they are not already available:
@@ -122,15 +123,15 @@ while True:
 
 ```text
 YOLO11n-Raspberry-Pi-Object-Detection/
-├── yolo11_ncnn_model.zip       # NCNN model archive (add your original file)
-├── <your_script>.py            # Thonny detection script (add your original file)
+│
 ├── README.md
-└── screenshots/
-    ├── architecture.png
-    ├── model_comparison.png
-    ├── loss_graph.png
-    ├── hardware_setup.jpg
-    └── detection_demo.png
+├── architecture.png
+├── detection_demo.png
+├── hardware_setup.jpg
+├── loss_graph.png
+├── model_comparison.png
+├── objectdetection.py
+└── yolo11n_ncnn_model.zip
 ```
 
 ## Dataset and Models
@@ -172,11 +173,11 @@ The presentation reports working live detections, but **does not provide measure
 
 **YOLO11 variant comparison**
 
-![YOLO11 variants comparison from the presentation](screenshots/model_comparison.png)
+![YOLO11 variants comparison from the presentation](model_comparison.png)
 
 **Loss graphs included in the presentation**
 
-![Loss graphs shown in the presentation](screenshots/loss_graph.png)
+![Loss graphs shown in the presentation](loss_graph.png)
 
 *The presentation does not establish these loss graphs as a training run performed for this Raspberry Pi deployment.*
 
@@ -184,11 +185,11 @@ The presentation reports working live detections, but **does not provide measure
 
 **Hardware setup from the presentation**
 
-![Raspberry Pi 4 camera and hardware setup](screenshots/hardware_setup.jpg)
+![Raspberry Pi 4 camera and hardware setup](hardware_setup.jpg)
 
 **Live object detection demonstration image from the presentation**
 
-![Live demonstration from the project presentation](screenshots/detection_demo.png)
+![Live demonstration from the project presentation](detection_demo.png)
 
 The presentation also references a demo recording playable in slideshow mode. A standalone video link is not provided here.
 
@@ -213,4 +214,3 @@ The report identifies these next steps:
 
 ---
 
-*Project documentation and screenshots adapted from the group's uploaded presentation, “Real-Time Object Detection using YOLO11n on Raspberry Pi 4 with Pi Camera Module 3 (Rev 1.3).”*
