@@ -202,15 +202,7 @@ The report identifies these next steps:
 - Add **alerts and object counting**.
 - Measure **precision, recall, and mAP on the project's own dataset**.
 
-## Contributors
 
-| Contributor | Roll number |
-|---|---|
-| Aryaman Pradhan | UCSE23012 |
-| Chelsea Nayak | UCSE23014 |
-| Deepak Sai Mohapatra | UCSE23018 |
-| Rhea Bachheti | UCSE23070 |
-| Anirudha Dash | UCSE23007 |
 
 ---
 
